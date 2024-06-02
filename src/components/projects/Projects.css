@@ -1,0 +1,180 @@
+:root {
+  --primary-color: #fff;
+  --primary-active-color: #86DA44;
+  --primary-background-color1: #1E1E1E;
+  --primary-background-color2: #343434;
+}
+
+.projects {
+  margin-top: 50px;
+}
+
+.projects .container .main-title {
+  color: var(--primary-background-color2);
+  font-size: 72px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  padding-left: 100px;
+}
+
+.projects .container .main-title .title {
+  color: var(--primary-color);
+  border-left: 3px solid var(--primary-active-color);
+  padding-left: 20px;
+  margin-left: 75px;
+  margin-top: -20px;
+  font-size: 36px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  position: relative;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+.projects-more {
+  width: 300px;
+  height: 70px;
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.115);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item a {
+  color: white;
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+  font-size: 18px;
+}
+
+.carousel-item div {
+  font-size: 32px;
+  color: white;
+  padding-left: 20px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.center-item {
+  transform: translateY(-20px);
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.arrow2 {
+  cursor: pointer;
+  font-size: 48px;
+  font-weight: 100;
+  color: var(--primary-active-color);
+}
+
+.progress-bar {
+  position: relative;
+  width: 420px;
+  height: 2px;
+  background-color: var(--primary-background-color2);
+  margin: 0 20px;
+}
+
+.progress {
+  height: 100%;
+  background-color: var(--primary-active-color);
+  transition: width 0.5s ease;
+}
+
+@media (max-width: 1200px) {
+  .carousel-item {
+    flex: 0 0 50%;
+    max-width: 400px;
+  }
+
+  .progress-bar {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects .container .main-title {
+    font-size: 48px;
+    padding-left: 50px;
+  }
+
+  .projects .container .main-title .title {
+    margin-left: 35px;
+    font-size: 24px;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%;
+    max-width: 300px;
+  }
+
+  .projects-more {
+    width: 200px;
+    height: 50px;
+  }
+  .projects-more a{
+   font-size: 14px;
+  }
+
+  .arrow2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects .container .main-title {
+    font-size: 36px;
+    padding-left: 20px;
+  }
+
+  .projects .container .main-title .title {
+    margin-left: 15px;
+    font-size: 18px;
+  }
+
+  .projects-more {
+    width: 150px;
+    height: 40px;
+  }
+  .progress-bar {
+    width: 150px;
+  }
+
+  .arrow2 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,141 @@
+:root {
+	--primary-color: #fff;
+	--primary-active-color: #86DA44;
+	--primary-background-color1: #1E1E1E;
+	--primary-background-color2: #343434;
+}
+
+.about-us {
+	padding: 0 200px;
+	margin-bottom: 100px;
+}
+
+.about-us .main-title {
+	color: var(--primary-background-color2);
+	font-size: 72px;
+	font-weight: 400;
+	margin-left: -80px;
+	display: inline-block;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.wrapper .aboutUs-about {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	max-width: 500px;
+}
+
+.wrapper .aboutUs-about .title {
+	color: var(--primary-color);
+	border-left: 3px solid var(--primary-active-color);
+	padding-left: 20px;
+	margin-left: -20px;
+	font-size: 36px;
+}
+
+.wrapper .aboutUs-about .title span {
+	color: var(--primary-active-color);
+}
+
+.aboutUs-about .items {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.aboutUs-about .items .item .name {
+	position: relative;
+	font-size: 24px;
+	color: var(--primary-active-color);
+	font-weight: 300;
+}
+
+.aboutUs-about .items .item span {
+	position: absolute;
+	color: var(--primary-background-color2);
+	font-size: 72px;
+	font-weight: 400;
+	left: 120px;
+}
+
+.aboutUs-about .items .item .description {
+	color: var(--primary-color);
+	font-size: 18px;
+	font-weight: 200;
+}
+
+.wrapper .image {
+	width: 450px;
+	height: 500px;
+	background-image: url('../../images/aboutus.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapper .image i {
+	color: #86DA44;
+	font-size: 24px;
+	border: 2px solid white;
+	border-radius: 50%;
+	padding: 20px;
+	width: 70px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 1200px) {	
+	.wrapper .aboutUs-about {
+		max-width: 400px;
+	}
+}
+@media (max-width: 1100px) {
+	.wrapper  {
+		width: 100%;
+	}
+	.about-us .container .wrapper {
+		flex-direction: column;
+		gap: 15px;
+	}
+}
+@media (max-width: 800px) {
+	.about-us {
+		padding: 0 50px;
+	}
+	.wrapper .aboutUs-about {
+		width: 100%;
+	}
+	.about-us .container .wrapper {
+		flex-direction: column;
+		gap: 15px;
+	}
+	.about-us .main-title {
+		margin-left: 80px;
+		font-size: 54px;
+	}
+}
+@media (max-width: 740px) {
+	.aboutUs-about .items .item span {
+		display: none;
+	}
+}
+@media (max-width: 500px) {
+	.about-us .main-title {
+		margin-left: 20px;
+		font-size: 36px;
+	}
+	.about-us .wrapper .image {
+		margin: 20px;
+		width: 350px;
+	}
+}

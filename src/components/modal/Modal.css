@@ -1,0 +1,92 @@
+:root {
+  --primary-color: #fff;
+  --primary-active-color: #86DA44;
+  --primary-background-color1: #1E1E1E;
+  --primary-background-color2: #343434;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: var(--primary-background-color1);
+  padding: 20px 80px;
+  width: 450px;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content h2 {
+  font-size: 28px;
+  font-weight: 400;
+  border-left: 3px solid var(--primary-active-color);
+  margin-left: -10px;
+  padding-left: 10px;
+  padding: 10px;
+  text-align: start;
+  color: var(--primary-active-color);
+}
+
+.modal-content p {
+  font-weight: 300;
+  font-size: 16px;
+  text-align: start;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content form label {
+  font-weight: 300;
+  padding-left: 10px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="tel"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.modal-content input[type="text"]::placeholder,
+.modal-content input[type="email"]::placeholder,
+.modal-content input[type="tel"]::placeholder {
+  color: var(--primary-color);
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.modal-content button {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border: 2px solid var(--primary-active-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+}

@@ -1,0 +1,376 @@
+:root {
+	--primary-color: #fff;
+	--primary-active-color: #86DA44;
+	--primary-background-color1: #1E1E1E;
+	--primary-background-color2: #343434;
+}
+
+/* one-project */
+.one-project {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.one-project .container {
+	padding: 0 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.one-project .one-project-about {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	width: 100%;
+}
+
+.one-project-about .title {
+	color: var(--primary-color);
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.one-project-about .name {
+	font-size: 60px;
+	font-weight: 400;
+	border-left: 3px solid var(--primary-active-color);
+	color: var(--primary-color);
+	padding-left: 10px;
+	margin-left: -10px;
+}
+
+.one-project-about .description {
+	color: var(--primary-color);
+	font-size: 20px;
+	font-weight: 200;
+	max-width: 400px;
+}
+
+.one-project-about a {
+	width: 300px;
+	margin-top: 20px;
+}
+
+.one-project .container .image {
+	width: 848px;
+	height: 560px;
+}
+
+.one-project .container .image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.one-project-counter {
+	color: var(--primary-color);
+	font-size: 35px;
+	margin-top: 50px;
+}
+
+.one-project-counter span {
+	color: var(--primary-active-color);
+	font-size: 48px;
+}
+
+.cottage {
+	margin-top: 100px;
+	background-image: url('./images/Rectangle 24.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.cottage .container {
+	padding: 60px 100px;
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cottage-about {
+	max-width: 500px;
+}
+
+.cottage-about .title {
+	color: var(--primary-active-color);
+	font-size: 36px;
+	font-weight: 400;
+	border-left: 3px solid var(--primary-active-color);
+	padding-left: 10px;
+	margin-left: -10px;
+}
+
+.cottage-about p {
+	color: var(--primary-color);
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 25px;
+}
+
+.cottage-list {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.cottage-list .list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.cottage-list .list p,
+span {
+	color: var(--primary-color);
+	font-weight: 300;
+}
+
+.cottage-list .list div {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+/* our-services */
+.our-services {
+	margin-top: 100px;
+}
+
+.our-services .container {
+	padding: 0 100px;
+	padding-bottom: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.our-services-about {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.our-services-about .title {
+	color: var(--primary-color);
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.our-services-about .name {
+	border-left: 3px solid var(--primary-active-color);
+	margin-left: -10px;
+	padding-left: 10px;
+	color: var(--primary-color);
+	font-size: 36px;
+}
+
+.our-services-about p {
+	font-weight: 300;
+	color: var(--primary-color);
+	line-height: 25px;
+}
+
+.our-services .container .image {
+	width: 1100px;
+	height: 500px;
+	background-image: url('./images/aboutus.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.our-services .container .image i {
+	color: #86DA44;
+	font-size: 24px;
+	border: 2px solid white;
+	border-radius: 50%;
+	padding: 20px;
+	width: 70px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* contact */
+.main-contact {
+	margin-top: 120px;
+}
+
+.main-contact .container {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	justify-content: space-between;
+	padding: 0 100px 100px;
+}
+
+.main-contact-about {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+.main-contact-about .name {
+	font-size: 36px;
+	border-left: 3px solid var(--primary-active-color);
+	padding-left: 10px;
+	margin-left: -10px;
+	color: var(--primary-color);
+	font-weight: 500;
+}
+
+.main-contact-about span {
+	color: var(--primary-color);
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.main-contact-about p {
+	color: var(--primary-color);
+	font-weight: 400;
+	font-size: 22px;
+}
+
+.main-contact-about button span {
+	font-size: 14px;
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: var(--primary-color);
+}
+
+.social-icons i {
+	transition: 0.3s ease;
+}
+
+.social-icons i:hover {
+	color: #86DA44;
+}
+
+.map {
+	width: 700px;
+	height: 400px;
+	overflow: hidden;
+}
+
+.map iframe {
+	width: 100%;
+	height: 100%;
+}
+
+@media (max-width: 1190px) {
+	.our-services .container {
+		gap: 20px;
+		flex-direction: column;
+	}
+
+	.our-services .container .image {
+		width: 100%;
+		height: 500px;
+	}
+}
+
+@media (max-width: 530px) {
+	.our-services .container {
+		padding: 20px;
+	}
+}
+
+@media (max-width: 900px) {
+	.one-project .container .image {
+		width: 500px !important;
+		padding: 40px;
+		gap: 20px;
+	}
+	.one-project .container {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 550px) {
+	.one-project .container {
+		padding: 20px;
+	}
+
+	.one-project .container .image {
+		width: 300px !important;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 790px) {
+	.one-project .container .one-project-about .title {
+		font-size: 24px;
+	}
+
+	.one-project .container .one-project-about .name {
+		font-size: 32px;
+	}
+
+	.one-project .container .one-project-about .description {
+		font-size: 16px;
+	}
+
+	.one-project .container .image {
+		width: 300px;
+		height: 400px;
+	}
+}
+
+@media (max-width: 660px) {
+	.one-project .container .image {
+		width: 550px;
+	}
+}
+
+@media (max-width: 850px) {
+	.cottage .container {
+		padding: 40px;
+		flex-direction: column;
+	}
+}
+@media (max-width: 1100px) {
+	.main-contact .container {
+		padding: 0 40px 100px;
+	}
+}
+@media (max-width: 940px) {
+	.main-contact-about {
+		width: 100%;
+	}
+	.main-contact-about button{
+		width: 250px;
+	}
+	.main-contact .container {
+		flex-direction: column;
+	}
+}
+@media (max-width: 740px) {
+	.map {
+		width: 500px;
+		height: 300px;
+	}
+}
+@media (max-width: 545px) {
+	.map {
+		width: 400px;
+		height: 300px;
+	}
+}
+@media (max-width: 460px) {
+	.map {
+		width: 300px;
+		height: 300px;
+	}
+}

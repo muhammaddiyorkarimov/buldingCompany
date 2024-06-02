@@ -1,0 +1,73 @@
+:root {
+  --primary-active-color: #86DA44;
+  --primary-active-dark-color: #5fcf09;
+}
+
+.animated-button {
+  width: 100%;
+  display: block;
+  padding: 10px 20px;
+  border: 2px solid var(--primary-active-color);
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+.animated-button:hover {
+	color: #fff;
+}
+
+.animated-button span {
+  position: relative;
+  z-index: 2;
+}
+
+.animated-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  background: var(--primary-active-color);
+  transition: transform 0.5s, opacity 0.4s;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.animated-button:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.clicked .click-effect {
+  content: '';
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  background: var(--primary-active-dark-color);
+  transition: transform 0.5s, opacity 0.4s;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.click-effect {
+  content: '';
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  background: var(--primary-active-dark-color);
+  transition: transform 0.5s, opacity 0.4s;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  z-index: 0;
+}

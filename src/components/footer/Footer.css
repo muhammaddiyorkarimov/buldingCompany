@@ -1,0 +1,188 @@
+footer {
+  width: 100%;
+  background-image: url('../../images/footer background.png');
+  background-position: center;
+  background-size: cover;
+  z-index: 100;
+}
+
+footer .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  color: var(--primary-color);
+}
+
+.consultation {
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.consultation h2 {
+  color: var(--primary-active-color);
+  margin-bottom: 10px;
+  border-left: 3px solid var(--primary-active-color);
+  padding: 15px 20px;
+  margin-left: -25px;
+  font-size: 26px;
+}
+
+.consultation p {
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-container label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #aaa;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.input-container input:focus~label,
+.input-container input:not(:placeholder-shown)~label {
+  top: -18px;
+  font-size: 14px;
+  color: var(--primary-active-color);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.checkbox-label span {
+  font-weight: 300;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  margin-right: 10px;
+}
+
+.checkbox i {
+  color: var(--primary-color);
+  opacity: 0;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contacts h2 {
+  color: var(--primary-active-color);
+  margin-bottom: 10px;
+  border-left: 3px solid var(--primary-active-color);
+  padding: 15px 20px;
+  margin-left: -25px;
+}
+
+.contacts span {
+  margin-top: -50px;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--primary-color);
+}
+
+.contacts p {
+  font-size: 18px;
+  color: var(--primary-color);
+  font-weight: 300;
+}
+
+.checkbox.checked {
+  background-color: var(--primary-active-color);
+}
+
+.checkbox.checked i {
+  opacity: 1;
+  border: 2px solid var(--primary-active-color);
+}
+
+footer .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary-color);
+}
+
+footer .social-icons i {
+  transition: 0.3s ease;
+}
+
+footer .social-icons i:hover {
+  color: var(--primary-active-color);
+}
+
+.footer-section {
+  border-top: 1px solid #ccc;
+  background-color: #000;
+}
+
+.back-to-top-button i {
+  background-color: var(--primary-background-color1);
+  color: #fff;
+  padding: 10px;
+}
+
+@media (max-width: 880px) {
+  footer .container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+}
+@media (max-width: 725px) {
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contacts .social-icons {
+    margin: 0 auto;
+  }
+  .consultation form{
+    padding: 0 20px;
+  }
+  .consultation h2 {
+    padding: 15px 20px;
+    margin-left: 20px;
+    font-size: 26px;
+  }
+}
